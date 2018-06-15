@@ -131,6 +131,7 @@ function getOrientation(file, callback) {
   reader.readAsArrayBuffer(file);
 }
 ```
+### PHP
 
 **Bold** and _Italic_ and `Code` text
 
