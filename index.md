@@ -1,6 +1,6 @@
 ### Javascript
 
-Resize image by canvas
+1. Resize image by canvas.
 
 ```javascript
 function resizeImage(file, callback) {
