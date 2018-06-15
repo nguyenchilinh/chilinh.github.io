@@ -1,5 +1,5 @@
 theme: jekyll-theme-midnight
-title: wellcome to tips
+title: Wellcome to tips
 markdown: kramdown
 kramdown:
   input: GFM
