@@ -2,8 +2,6 @@
 
 Resize image by canvas
 
-```markdown
-
 # Header 1
 ## Header 2
 ### Header 3
