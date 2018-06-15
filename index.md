@@ -119,6 +119,6 @@ function getOrientation(file, callback) {
   reader.readAsArrayBuffer(file);
 }
 ```
-[Demo](http://jsbin.com/recowuhozi/edit?js,console,output)
+[Edit](http://jsbin.com/recowuhozi/edit?js,console,output)
 
 ### **PHP**
