@@ -3,33 +3,21 @@
 1. Resize image by canvas.
 
 ```javascript
-function resizeImage(file, callback) {
+function resizeImage(file, imgSize, callback) {
   if(!!file){
+    console.log(file);
     var fileReader = new FileReader();
     fileReader.onload = function () {
       var img = new Image(), degrees = 0;
       img.onload = function () {
         var canvas = document.createElement("canvas"),
-            imgWidth = img.width,
-            imgHeight = img.height,
-            ctx = canvas.getContext("2d"),
-            rota = imgWidth - imgHeight,
-            newW = (imgWidth < 1500) ? imgWidth : 1500,
-            newH = (imgHeight < 1500) ? imgHeight : 1500;
-        // file size > 2MB
-        if(file.size > 1024 * 1024 * 2){
-          // width < height
-          if(rota < 0){
-            imgWidth = newW;
-            imgHeight = newH;
-          }else if(rota > 0 && rota !== 1){ // width > height 
-            imgWidth = newW;
-            imgHeight = newH;
-          }else{ // width = height
-            imgWidth = newW;
-            imgHeight = newH;
-          }
-        }
+          imgWidth = img.width,
+          imgHeight = img.height,
+          ctx = canvas.getContext("2d"),
+          rotate = imgWidth - imgHeight,
+          ratio = imgWidth / imgHeight,
+          newW = imgWidth < imgHeight ? imgSize : +((imgWidth / imgHeight) * imgSize),
+          newH = imgHeight < imgWidth ? imgSize : +((imgHeight / imgWidth) * imgSize);
 
         canvas.width = newW;
         canvas.height = newH;
@@ -131,4 +119,6 @@ function getOrientation(file, callback) {
   reader.readAsArrayBuffer(file);
 }
 ```
+[Demo](http://jsbin.com/recowuhozi/edit?js,console,output)]
+
 ### **PHP**
