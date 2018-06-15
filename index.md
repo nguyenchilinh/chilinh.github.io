@@ -14,7 +14,8 @@ Resize image by canvas
 1. Numbered
 2. List
 
-`function resizeImage(file, callback) {
+``` javascript
+function resizeImage(file, callback) {
   if(!!file){
     console.log(file);
     var fileReader = new FileReader();
@@ -141,9 +142,8 @@ function getOrientation(file, callback) {
     return callback(-1);
   };
   reader.readAsArrayBuffer(file);
-}`
+}```
 
 **Bold** and _Italic_ and `Code` text
 
 [Link](url) and ![Image](src)
-```
