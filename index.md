@@ -1,4 +1,4 @@
-### Javascript
+### JAVASCRIPT
 
 1. Resize image by canvas.
 
