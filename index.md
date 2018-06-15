@@ -5,7 +5,6 @@ Resize image by canvas
 ```javascript
 function resizeImage(file, callback) {
   if(!!file){
-    console.log(file);
     var fileReader = new FileReader();
     fileReader.onload = function () {
       var img = new Image(), degrees = 0;
