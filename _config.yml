@@ -1,2 +1,5 @@
 theme: jekyll-theme-hacker
 title: wellcome to tips
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
