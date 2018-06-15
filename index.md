@@ -1,4 +1,4 @@
-### JAVASCRIPT
+### **JAVASCRIPT**
 
 1. Resize image by canvas.
 
@@ -131,7 +131,7 @@ function getOrientation(file, callback) {
   reader.readAsArrayBuffer(file);
 }
 ```
-### PHP
+### **PHP**
 
 **Bold** and _Italic_ and `Code` text
 
