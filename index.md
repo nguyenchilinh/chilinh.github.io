@@ -129,5 +129,4 @@ function formatCurrency(n, separate = "."){
   return n.toString().replace(regex, separate);
 }
 ```
-
 ### **PHP**
