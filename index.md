@@ -121,4 +121,13 @@ function getOrientation(file, callback) {
 ```
 [Edit](http://jsbin.com/recowuhozi/edit?js,console,output)
 
+2. Function format currency.
+
+```javascript
+function formatCurrency(n, separate = "."){
+  var regex = /\B(?=(\d{3})+(?!\d))/g;
+  return n.toString().replace(regex, separate);
+}
+```
+
 ### **PHP**
